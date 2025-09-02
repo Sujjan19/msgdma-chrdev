@@ -592,7 +592,7 @@ msgdma_exit(void)
 subsys_initcall(msgdma_init);
 module_exit(msgdma_exit);
 
-MODULE_DESCRIPTION("MSGDMA-CHRDEV - one platform device per DMA instance");
+MODULE_DESCRIPTION("msgdma-chrdev - platform character device driver for msgdma IPcore");
 MODULE_AUTHOR("Sujan SM");
 MODULE_VERSION("2.0");
 MODULE_LICENSE("GPL v2");
