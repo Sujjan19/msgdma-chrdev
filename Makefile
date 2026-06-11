@@ -1,6 +1,9 @@
-DRV_NAME		= msgdma
+DRV_NAME = msgdma
 
 # Allow override from command line, provide defaults if not set
+CROSS_DIR := /home/qnu/gsrd.dk_si_agi027fb/gcc-arm-11.2-2022.02-x86_64-aarch64-none-linux-gnu/bin
+export PATH := $(CROSS_DIR):$(PATH)
+
 CROSS_COMPILE ?= aarch64-none-linux-gnu-
 ARCH ?= arm64
 KBUILD_DIR ?= /home/qnu/gsrd.dk_si_agi027fb/linux-socfpga
